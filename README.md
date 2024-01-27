@@ -29,13 +29,13 @@ Open [http://localhost:3000](http://localhost:3000) on your browser and get star
 
 Need to add support your favourite auth provider? Or support for a different ORM? Contributions are welcome! 
 
-### You can contribute by
+#### You can contribute by
 
 - Solving an open issue
 - Submitting feature requests
 - Adding more useful comments
 
-### Contribution Guide
+#### Contribution Guide
 
 - You can fork this repository and create a pull request for an open issue. 
 - If an issue doesn't exist, you can first create the issue and then open a pull request that resolves it. 
