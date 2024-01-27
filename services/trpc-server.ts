@@ -41,7 +41,7 @@ export const createTRPCRouter = t.router
 /** use for publicly available procedures in a router */
 export const publicProcedure = t.procedure
 
-/** use for procedures that reqire a valid session in a router */
+/** use for procedures in a router that require a valid session */
 export const authenticatedProcedure = t.procedure.use(async function isAuthed({
   ctx,
   next,

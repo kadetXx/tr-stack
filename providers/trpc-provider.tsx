@@ -15,7 +15,8 @@ export const TrpcProvider: React.FC<{ children: React.ReactNode }> = ({
         defaultOptions: {
           queries: {
             staleTime: 30000,
-            refetchOnWindowFocus: false,
+            refetchOnWindowFocus: true,
+            /** add more global react-query config here */
           },
         },
       }),

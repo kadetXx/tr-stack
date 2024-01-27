@@ -1,6 +1,10 @@
 import { env } from '@/env.mjs'
 import { PrismaClient } from '@prisma/client'
-
+/**
+ * initialises prisma ORM.
+ * don't forget to create/update your .env file
+ * with your db connection strings
+ */
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
 }
