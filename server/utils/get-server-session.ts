@@ -7,7 +7,7 @@ import { cookies } from 'next/headers'
  * however you wish depending on the auth service you make
  * use of.
  */
-export async function getServersideSession() {
+export async function getServerSession() {
   const cookiestore = cookies()
 
   const refresh_token = cookiestore.get(Cookies.REFRESH_TOKEN_KEY)
