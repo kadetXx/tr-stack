@@ -24,3 +24,20 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) on your browser and get started right away 🚀
+
+## Contributing
+
+Need to add support your favourite auth provider? Or support for a different ORM? Contributions are welcome! 
+
+### You can contribute by
+
+- Solving an open issue
+- Submitting feature requests
+- Adding more useful comments
+
+### Contribution Guide
+
+- You can fork this repository and create a pull request for an open issue. 
+- If an issue doesn't exist, you can first create the issue and then open a pull request that resolves it. 
+- All pull requests should come from a new branch with the format `feat/describe-the-feature`
+- Please make sure to use descriptive titles for your PRs
