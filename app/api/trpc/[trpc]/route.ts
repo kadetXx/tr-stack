@@ -1,7 +1,7 @@
 import { prisma } from '@/server/db'
 import { appRouter } from '@/server/routers/root'
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch'
-import { getServersideSession } from '@/server/utils'
+import { getServerSession } from '@/server/utils'
 import { NextRequest } from 'next/server'
 
 const handler = (req: NextRequest) => {
@@ -10,7 +10,7 @@ const handler = (req: NextRequest) => {
     router: appRouter,
     endpoint: '/api/trpc',
     createContext: async () => {
-      const session = await getServersideSession()
+      const session = await getServerSession()
 
       return {
         req,
