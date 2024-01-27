@@ -18,11 +18,19 @@ export function unauthorisedError(message: string) {
   })
 }
 
-export function serverError(error?: TRPCError | Error, message?: string) {
+export function serverError(
+  err?: TRPCError | Error | unknown,
+  message?: string,
+) {
+  const error = err as TRPCError | Error
+
   return new TRPCError({
     code: 'INTERNAL_SERVER_ERROR',
-    message: message || 'An unexpected error occurred, please try again later.',
     cause: error?.cause,
+    message:
+      message ||
+      error?.message ||
+      'An unexpected error occurred, please try again later.',
   })
 }
 

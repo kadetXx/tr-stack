@@ -4,6 +4,7 @@ import {
   publicProcedure,
   authenticatedProcedure,
 } from '@/services/trpc-server'
+import { serverError } from '@/constants/errors'
 
 export const userRouter = createTRPCRouter({
   /** publicly accessible */
@@ -18,17 +19,21 @@ export const userRouter = createTRPCRouter({
     .mutation(async ({ input, ctx }) => {
       const { id, name, email } = input
 
-      return await ctx.prisma.user.create({
-        data: {
-          id,
-          name,
-          email,
-        },
-      })
+      try {
+        return await ctx.prisma.user.create({
+          data: {
+            id,
+            name,
+            email,
+          },
+        })
+      } catch (error) {
+        throw serverError(error)
+      }
     }),
 
   /** only authenticated users can access */
-  getUser: authenticatedProcedure.mutation(async () => {
+  getUser: authenticatedProcedure.query(async () => {
     return {
       id: 'uuid',
       name: 'John Doe',
