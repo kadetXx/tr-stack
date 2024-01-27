@@ -18,6 +18,12 @@ export const env = createEnv({
   },
 
   experimental__runtimeEnv: {
+    /**
+     * all client side env variables should
+     * be added here.
+     *
+     * server variables are automatically picked up
+     */
     NEXT_PUBLIC_GITHUB_URL: process.env.NEXT_PUBLIC_GITHUB_URL,
   },
 })
