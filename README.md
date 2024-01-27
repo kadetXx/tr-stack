@@ -1,6 +1,6 @@
 # TR Stack
 
-Opensource Trpc + Prisma starter kit for Next 14+ that actually works.
+Trpc + Prisma starter kit for Next 14+ that actually works.
 
 - Next 14+
 - Scalable & Easily understandable Structure
