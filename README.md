@@ -3,7 +3,7 @@
 Trpc + Prisma starter kit for Next 14+ that actually works.
 
 - Next 14+
-- Scalable & Easily understandable Structure
+- Easily understandable Structure
 - Utils for handling both public and authenticated trpc procedures
 - Utils for communicating between Trpc and Next Route handlers
 - Simplified comments for trpc setup functions
