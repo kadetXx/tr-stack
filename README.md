@@ -7,7 +7,7 @@ Opensource Trpc + Prisma starter kit for Next 14+ that actually works.
 - Utils for handling both public and authenticated trpc procedures
 - Utils for communicating between Trpc and Next Route handlers
 - Simplified comments for trpc setup functions
-- Linting tools (prettier, eslint, lint-staged, husky, and commit-lint) all setup so you don't have to
+- Eslint, prettier, lint-staged, husky, and commit-lint all setup so you don't have to
 
 ## Getting Started
 
